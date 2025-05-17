@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<!--
+	Based on:
+	Phantom by HTML5 UP, html5up.net | @ajlkn
+-->
+<html>
+	<head>
+		<title>Laura Rossi</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/main.css')}}"/>
+		<noscript><link rel="stylesheet" href="{{ url_for('static', filename='assets/css/noscript.css')}}" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="{{ url_for('index')}}" class="logo">
+									<span class="symbol"><img src="{{ url_for('static', filename='images/logo.svg')}}" alt="" /></span><span class="title">Laura Rossi</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="{{ url_for('index')}}">Home</a></li>
+							<li><a href="{{ url_for('experience')}}">Experience</a></li>
+							<li><a href="{{ url_for('projects')}}">Projects</a></li>
+							<li><a href="{{ url_for('education')}}">Education</a></li>
+							<li><a href="{{ url_for('other')}}">Other</a></li>
+						</ul>
+					</nav>
+
+				{% block content %}
+				{% endblock %}
+				
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+
+							<section>
+								<h2>How to reach me</h2>
+								<ul class="icons">
+									<li><a href="https://github.com/lauraarossi" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://www.linkedin.com/in/laura-agustina-rossi/" class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="mailto:laura.a.rossi.r@gmail.com" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>&copy; Laura Rossi. All rights reserved</li><li>Design: Laura Rossi, based on "Phantom" by <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+			</div>
+
+		<!-- Scripts -->
+			<script src="{{ url_for('static', filename='assets/js/jquery.min.js')}}"></script>
+			<script src="{{ url_for('static', filename='assets/js/browser.min.js')}}"></script>
+			<script src="{{ url_for('static', filename='assets/js/breakpoints.min.js')}}"></script>
+			<script src="{{ url_for('static', filename='assets/js/util.js')}}"></script>
+			<script src="{{ url_for('static', filename='assets/js/main.js')}}"></script>
+
+	</body>
+</html>

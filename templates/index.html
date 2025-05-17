@@ -1,0 +1,59 @@
+{% extends "layout.html" %}
+{% block content %}
+<!-- Main -->
+<div id="main">
+	<div class="inner">
+		<header>
+			<h1>Laura Rossi</h1>
+			<p>Software developer · Actuary · Storyteller</p>
+		</header>
+		<section class="tiles">
+			<article class="style1">
+				<span class="image">
+					<img src="{{ url_for('static', filename='images/pic01.jpg')}}" alt="" />
+				</span>
+				<a href="{{ url_for('experience')}}">
+					<h2>Experience</h2>
+					<div class="content">
+						<p>Learn more about my prior roles and experience.</p>
+					</div>
+				</a>
+			</article>
+			<article class="style2">
+				<span class="image">
+					<img src="{{ url_for('static', filename='images/pic02.jpg')}}" alt="" />
+				</span>
+				<a href="{{ url_for('projects')}}">
+					<h2>Projects</h2>
+					<div class="content">
+						<p>Learn more about my personal and professional projects.</p>
+					</div>
+				</a>
+			</article>
+			<article class="style3">
+				<span class="image">
+					<img src="{{ url_for('static', filename='images/pic03.jpg')}}" alt="" />
+				</span>
+				<a href="{{ url_for('education')}}">
+					<h2>Education</h2>
+					<div class="content">
+						<p>Learn more about my educational background.</p>
+					</div>
+				</a>
+			</article>
+			<article class="style5">
+				<span class="image">
+					<img src="{{ url_for('static', filename='images/pic05.jpg')}}" alt="" />
+				</span>
+				<a href="{{ url_for('other')}}">
+					<h2>Other Content</h2>
+					<div class="content">
+						<p>Everything else.</p>
+					</div>
+				</a>
+			</article>
+		</section>
+	</div>
+</div>
+
+{% endblock %}
