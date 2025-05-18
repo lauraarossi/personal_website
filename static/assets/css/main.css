@@ -3313,6 +3313,68 @@ input, select, textarea {
 
 		}
 
+/* Timeline */
+
+	.timeline {
+		position: relative;
+		max-width: 1200px;
+		margin: 0 auto;
+		}
+
+	ol {
+		list-style-image: url("../../images/paw_small.png");
+		}
+
+	.tli {
+		position: relative;
+		margin: 0;
+		padding-bottom: 1em;
+		padding-left: 45px;
+		}
+
+	.tli:before {
+		content: '';
+		background-color: #38423f;
+		position: absolute;
+		bottom: 0px;
+		top: 0px;
+		left: 6px;
+		width: 3px;
+		}
+
+	.tli:after {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 2px;
+		height: 12px;
+		width: 12px;
+		}
+
+/* Gallery */
+	.gallery {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(8em, 1fr));
+		gap: 1em;
+		padding: 1em;
+		width: 70%;
+		margin: 0 auto;
+		background: white;
+		}
+
+	.gallery img {
+		width: 100%;
+		aspect-ratio: 0.75;
+		object-fit: cover;
+		border-radius: 0.5em;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+		transition: 0.3s;
+		}
+
+	.gallery img:hover {
+		transform: scale(2.5);
+		}		
+
 /* Wrapper */
 
 	#wrapper > * > .inner {

@@ -3,11 +3,91 @@
 <!-- Main -->
 <div id="main">
 	<div class="inner">
-		<h1>Generic Page</h1>
-		<span class="image main"><img src="images/pic13.jpg" alt="" /></span>
-		<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique.</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel venenatis mauris vehicula hendrerit.</p>
-		<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
+		<h1>Projects</h1>
+		<ol>
+		<li class="tli">
+			<div>
+			<h2>2025</h2>
+			<h3>Personal Development</h3>
+			<p>While my professional projects from 2024 are ongoing, in 2025 I'm also working on a few passion projects.</p>
+			<p>I'm spending my time on:</p>
+			<ul>
+				<li>Building my own PC (this is now finished, I love it)</li>
+				<li>Improving my C++</li>
+				<li>Learning to use Unreal Engine</li>
+			</ul>
+			<h3>Capital Modelling Tech Lead</h3>
+			<p>I have stepped in as the technical lead of a project that is delivering a complex, internal model capital solution for a large UK Life Insurance and Pensions provider.</p>
+			</div>
+		</li>
+		<li class="tli">
+			<div>
+			<h2>2024</h2>
+			<h3>SII Calculation and Reporting tool</h3>
+			<p>I am currently working on the design and implementation of a Solvency II calculation engine and report generator for a large Irish Life insurer, built entirely on Python. The solution will integrate with existing actuarial MG-ALFA models and produce a number of custom Management Reports as well as data for downstream processing. </p>
+			<h3>Assumptions Management System</h3>
+			<p>I am working on the implementation of an assumptions management (ETL) system for a large UK Life Insurance and Pensions provider, built on Python and integrating to a web UI built on Angular + Azure Functions. I joined this workstream as an independent contributor and have since stepped into the lead developer role. The system is now live and has received excellent end-user feedback.</p>
+			</div>
+		</li>	
+		<li class="tli">
+			<div>
+			<h2>2023</h2>
+			<h3>Catastrophe Modelling</h3>
+			<p>I worked with a large UK General Insurance client and an international team to implement a catastrophe modelling system, taking in RMS and Air data and using Tyche, Python, SQL and a JavaScript UI to provide the client with a greenfield system for loss and liability modelling.</p>
+			</div>
+		</li>			
+		<li class="tli">
+			<div>
+			<h2>2022</h2>
+			<h3>Unit Linked Products Data Validation and Analysis of Change</h3>
+			<p>I worked with a large Multinational Reinsurer to migrate the data validation and preprocessing for their Unit Linked business from Access (SQL + VBA) databases to a 100x faster Python program. This project also involved training their team members to own and maintain the system in the future.</p>
+			<h3>Actuarial reporting POC</h3>
+			<p>I build a proof of concept Python TKinter app where users can take in actuarial modelling data and generate a number of customer reports, including the generation of pdfs,  Excel spreadsheets and automated emailing of the reports.</p>
+			</div>
+		</li>
+		<li class="tli">
+			<div>
+			<h2>2021</h2>
+			<h3>Foundry Angel Investor Interviews</h3>
+			<p>Working with The Purdue Foundry ventures team, I conducted primary research interviewing potential members of a Purdue Angel Investor group. The project focused on determining interest in the potential reestablishment of such an angel group and on understanding the investment habits and hurdles faced by interviewees. I interviewed 16 potential US and international investors from the Foundry's extended network over a month and compiled a qualitative report of their reported experience.</p>
+			</div>
+		</li>
+		<li class="tli">
+			<div>
+			<h2>2020</h2>
+			<h3>Adipo Investor Research</h3>
+			<p>As part of my involvement with the Purdue Foundry, I am researching target investor groups and possible corporate partners for biotechnology startup <a href="https://adipotherapeutics.com/">Adipo Therapeutics Llc.</a></p>
+			<h3>West Paw Inc Inventory Analysis</h3>
+			<p>As part of an independent study project under the supervision of Professor Gemma Berenguer Falguera, I am conducting an analysis of the current inventory policy of Sustainable Pet Products manufacturer <a href="https://www.westpaw.com/">West Paw Inc</a>. The project consists of holding cost and inventory level analysis, leasing to the development of a new inventory policy recommendation for West Paw and an analysis of the implications it leads to.</p>
+			<a href="{{ url_for('static', filename='downloads/west-paw-analysis.docx')}}" download="west-paw-analysis.docx">Download</a>
+			<p></p>
+			<h3>Go-to-market strategy</h3>
+			<p>As part of my involvement with the Purdue Foundry, I built spreadsheet models to help startup companies <a href="https://www.speechvive.com/">SpeechVive</a> and <a href="https://nutramaize.com/">NutraMaize</a> analyze their go to market strategy, potential for revenue, growth drivers and projected costs.</p>
+			<h3>Hydration, Sports Performance and College Sports Revenue Research</h3>
+			<p>As part of my involvement with the Purdue Foundry, I carried out research to report the potential for impact of high-accuracy hydration monitoring in collegiate sports performance and revenue.</p>
+			</div>
+		</li>
+		<li class="tli">
+			<div>
+			<h2>2019</h2>
+			<h3>Purdue Foundry CRM Evaluation</h3>
+			<p>As part of my involvement with the Purdue Foundry, I carried out requirements gathering and evaluated the fitness of our CRM system. Working together with the Purdue Research Foundation's IT team, we identified areas for system optimization, as well as new desirable and cost-effective functionality.</p>
+			</div>
+		</li>
+		<li class="tli">
+			<div>
+			<h2>2018</h2>
+			<h3>OEE Database Development</h3>
+			<p>As a personal project and in collaboration with a local Chicago chemical production facility, I developed an MS Access-based database and reporting tool that collects and summarizes OEE performance across multiple facilities.</p>
+			<h3>B.A. Thesis: Water under the bridge? Truth Commissions' effectiveness in South Africa and Morocco</h3>
+			<a href="{{ url_for('static', filename='downloads/water_under_the_bridge.pdf')}}" download="water_under_the_bridge.pdf">Download</a>
+			<p></p>
+			<h3>Twitter Political Sentiment Research with John Brehm</h3>
+			<a href="{{ url_for('static', filename='downloads/is_political_messaging_persuasive_or_manipulative.pdf')}}" download="is_political_messaging_persuasive_or_manipulative.pdf">Download</a>
+			<p></p>
+			</div>
+		</li>
+		</ol>
 	</div>
 </div>
 
