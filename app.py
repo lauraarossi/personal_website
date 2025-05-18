@@ -24,7 +24,8 @@ try:
     def other():
         return render_template("other.html")
 
-except:
+except Exception as e:
+    print(e)
     print(traceback.format_exc())
 
 if __name__ == "__main__":
