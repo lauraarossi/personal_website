@@ -1,0 +1,76 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<!-- Main -->
+<main id="main">
+    <div class="inner">
+        <header>
+            <h1>Contact Me</h1>
+            <p>Feel free to send me a message using the form below.</p>
+        </header>
+        
+        <section>
+            <form method="POST" action="{{ url_for('contact_form') }}">
+                {{ form.hidden_tag() }}
+                
+                <div class="row gtr-uniform">
+                    <div class="col-6 col-12-xsmall">
+                        {{ form.name.label }}
+                        {{ form.name(placeholder="Your Name") }}
+                        {% if form.name.errors %}
+                            <ul class="errors">
+                                {% for error in form.name.errors %}
+                                    <li>{{ error }}</li>
+                                {% endfor %}
+                            </ul>
+                        {% endif %}
+                    </div>
+                    
+                    <div class="col-6 col-12-xsmall">
+                        {{ form.email.label }}
+                        {{ form.email(placeholder="Your Email") }}
+                        {% if form.email.errors %}
+                            <ul class="errors">
+                                {% for error in form.email.errors %}
+                                    <li>{{ error }}</li>
+                                {% endfor %}
+                            </ul>
+                        {% endif %}
+                    </div>
+                    
+                    <div class="col-12">
+                        {{ form.subject.label }}
+                        {{ form.subject(placeholder="Subject") }}
+                        {% if form.subject.errors %}
+                            <ul class="errors">
+                                {% for error in form.subject.errors %}
+                                    <li>{{ error }}</li>
+                                {% endfor %}
+                            </ul>
+                        {% endif %}
+                    </div>
+                    
+                    <div class="col-12">
+                        {{ form.text.label }}
+                        {{ form.text(placeholder="Your Message", rows="6") }}
+                        {% if form.text.errors %}
+                            <ul class="errors">
+                                {% for error in form.text.errors %}
+                                    <li>{{ error }}</li>
+                                {% endfor %}
+                            </ul>
+                        {% endif %}
+                    </div>
+                    
+                    <div class="col-12">
+                        <ul class="actions">
+                            <li>{{ form.submit(class="primary") }}</li>
+                            <li><input type="reset" value="Reset" /></li>
+                        </ul>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </div>
+</main>
+{% endblock %}
