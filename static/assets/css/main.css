@@ -3391,3 +3391,81 @@ input, select, textarea {
 			}
 
 		}
+
+/* Flash Messages */
+.flash-messages {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	z-index: 1000;
+	max-width: 400px;
+}
+
+.alert {
+	padding: 15px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	color: white;
+	font-weight: bold;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.alert-success {
+	background-color: #28a745;
+}
+
+.alert-error {
+	background-color: #dc3545;
+}
+
+/* Contact Form */
+#main .inner form {
+	margin-top: 2em;
+}
+
+#main .inner form .row {
+	margin-bottom: 1.5em;
+}
+
+#main .inner form label {
+	display: block;
+	margin-bottom: 0.5em;
+	font-weight: bold;
+	color: #666;
+}
+
+#main .inner form input[type="text"],
+#main .inner form input[type="email"],
+#main .inner form textarea {
+	width: 100%;
+	padding: 0.75em;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	font-size: 1em;
+	font-family: inherit;
+}
+
+#main .inner form textarea {
+	resize: vertical;
+	min-height: 120px;
+}
+
+#main .inner form .errors {
+	list-style: none;
+	margin: 0.5em 0 0 0;
+	padding: 0;
+}
+
+#main .inner form .errors li {
+	color: #dc3545;
+	font-size: 0.9em;
+	margin-bottom: 0.25em;
+}
+
+#main .inner form .actions {
+	margin-top: 2em;
+}
+
+#main .inner form .actions li {
+	margin-right: 1em;
+}

@@ -43,11 +43,25 @@
 							<li><a href="{{ url_for('projects')}}">Projects</a></li>
 							<li><a href="{{ url_for('education')}}">Education</a></li>
 							<li><a href="{{ url_for('other')}}">Other</a></li>
+							<li><a href="{{ url_for('contact_form')}}">Contact</a></li>
 						</ul>
 					</nav>
 
 				{% block content %}
 				{% endblock %}
+				
+				<!-- Flash Messages -->
+				{% with messages = get_flashed_messages(with_categories=true) %}
+					{% if messages %}
+						<div class="flash-messages">
+							{% for category, message in messages %}
+								<div class="alert alert-{{ category }}">
+									{{ message }}
+								</div>
+							{% endfor %}
+						</div>
+					{% endif %}
+				{% endwith %}
 				
 				<!-- Footer -->
 					<footer id="footer">
@@ -59,6 +73,7 @@
 									<li><a href="https://github.com/lauraarossi" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
 									<li><a href="https://www.linkedin.com/in/laura-agustina-rossi/" class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
 									<li><a href="mailto:laura.a.rossi.r@gmail.com" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+									<li><a href="{{ url_for('contact_form')}}" class="icon solid style2 fa-edit"><span class="label">Contact Form</span></a></li>
 								</ul>
 							</section>
 							<ul class="copyright">
